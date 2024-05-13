@@ -1,0 +1,103 @@
+.header .shopping-cart {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 38rem;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+  overflow-y: auto;
+}
+
+.header .shopping-cart.active {
+  right: 2rem;
+}
+
+.empty-cart-message {
+  text-align: center;
+  font-size: 18px;
+  color: #111111;
+  margin-top: 10px;
+}
+
+.shopping-cart {
+  max-height: 500px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  /* Add any other styles as needed */
+}
+
+.header .shopping-cart .box {
+  display: flex;
+  gap: 1;
+  align-items: center;
+  margin: 1rem 0;
+  position: relative;
+}
+.header .shopping-cart .box img {
+  height: 10rem;
+}
+.header .shopping-cart .box .content h3 {
+  color: var(--black);
+  font-size: 1.9rem;
+}
+.header .shopping-cart .box .content span {
+  color: var(--light-color);
+  font-size: 1.6rem;
+}
+.header .shopping-cart .box .content .quantity {
+  margin-left: 1rem;
+}
+.header .shopping-cart .box .trash-icon {
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  color: var(--light-color);
+  font-size: 2rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.header .shopping-cart .total-amount {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.header .shopping-cart .total-amount-label {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.header .shopping-cart .total-amount-value {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.header .shopping-cart .order-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ffde73;
+  color: #981e00;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease;
+}
+
+.header .shopping-cart .order-button:hover {
+  background-color: #ffc013;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header .shopping-cart .total-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
